@@ -15,6 +15,6 @@ module load intel/python/3
 # 2 Activate the virtual environment
 source /home/nberardo/myenv/bin/activate
 # 3 Run the python script
-python -m torch.distributed.launch --nproc_per_node=4 main_dino.py --arch resnet50 --optimizer sgd --lr 0.03 --weight_decay 1e-4 --weight_decay_end 1e-4 --global_crops_scale 0.14 1 --local_crops_scale 0.05 0.14 --data_path /home/eaieallo/ImageNet/train --output_dir /home/nberardo/dino/saving_dir
+python -m torch.distributed.launch --nproc_per_node=4 main_dino.py --arch resnet50 --optimizer sgd --lr 0.03 --weight_decay 1e-4 --weight_decay_end 1e-4 --global_crops_scale 0.14 1 --local_crops_scale 0.05 0.14 --data_path /home/eaiello/ImageNet/train --output_dir /home/nberardo/dino/experiments
 
 
